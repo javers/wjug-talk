@@ -1,0 +1,98 @@
+* PRZED
+- oswoi� si� ze scen� wcze�niej
+  du�o ludzi, super! chc� si� podzieli� z nimi wiedz�
+- wy�apa� wzrokowo naturalnych wspieraczy, u�miechn�� si� do nich, 3x
+  w razie awarii, �apiemy kontakt z wspieraczem.
+- z�apa� kontakt z krypto-melancholikami (oni naprawd� my�l�, 'czy on ma racj�?'),
+  Odczarowa� ich! (widz� Ci�, jeste� wa�ny. Widz� Ci�! mo�esz by�! U�miechn�� si� do nich.)
+
+* START
+ - pierwsze 2 min wykute na blach�
+ - spokojnie si� przechadza�, zachowuj�c kontakt wzrokowy
+ - patrzymy sektorowo, zmieniaj�c sektory losowo na wspieraczy
+ - postawa, kr�gos�up prosty, ramiona lu�no, broda r�wnolegle do pod�ogi
+   {
+   w razie awarii:
+     - zdj�� mostek z przepony
+     - wydech, wdech
+     - u�miech
+   }
+
+ * MIMIKA
+ - lekki u�miech, !ca�y czas!
+   luz
+
+ * R�CE i gad�ety
+ - r�ce s� odgromnikiem, gestykulacja - r�ce powy�ej talii, poni�ej ramion, z przodu!
+ - autog�aski - zabronione!
+ - zero gad�et�w
+ - prezenter i mikroport
+ - odliczanie czasu na smartfonie
+
+
+ DO POPRAWY :
+ *** u�miech, gesty! ***
+ - g�o�no !!!
+ * najpierw zdefiniowa�:
+ - cel dla Was, z czym wyjdziecie, jak skorzystacie *
+ - nogi razem
+ - skupi� wzrok, do 3s.
+ - bez laptopa!
+ - szczeg�y techniczne dalej
+ Pierwsze slajdy mega lekkie
+
+
+Druga osoba - te� gra:
+- utrzymuje kontakt z widowni�
+- patrzy na koleg� jak w obrazek
+  Razem:
+  - dynamizm, wyrerzyserowany sp�r
+
+- Na koniec
+Jakie macie pytanie.
+Je�li nie checie pyta� na forum, to jeste�my w kuluarach do ko�ca dnia, i ch�tnie porozmawiamy jeszcze.
+
+
+Our Intro - 2 min
+  BW.
+  1. Cze��! Nazywam si� Bartek Walacik
+     - Pracuj� w Grupie Allegro,
+       jako Leader zespo�u developerskiego.
+     - Po godzinach, pracuj� nad open-source'owym projektem o nazwie JaVers.
+
+  P.S
+  1. Nazywam si� Pawe� Szymczyk, i tak jak Bartek po pracy zajmuję się rozwijaniem Javersa,
+  natomiast zawodowo jestem developerem w grupie allegro
+
+  P.S
+  2. Przez najbli�sze 40 min,
+     b�dziemy rozmawia� o Spocku, czyli najlepszeym obecnie frameworku
+     do tesowania aplikacji dzia�aj�cych na JVM'em
+
+  B.W
+  3. Dobrze, kto� zapyta ale po co mi Spock?
+      - �eby odpowiedzie� na to pytanie, pos�u�� si� metafor�.
+        Wyobra�cie sobie, �e gracie w Diablo III i znajdujecie artefakt o nazwie Spock.
+      - Bierzecie go do �apy, patrzycie na statystyki, i co si� dzieje:
+        * velocity +10           (scrumowe, nie samochodowa)
+        * code readability +5    (wreszcie rozumiecie testy, kt�re napisa� wasz kolega z zespo�u)
+        * documentation +10      (wasze testy staj� si� lepsz� dokumentacj� wymaga�)
+        * coverage + 10          (coverage jest wa�ny, dyrektorzy go lubi�)
+        * code repetition -5     (...
+  P.S. Bartek zapomniał o najważniejszej statystyce tego artefaktu, czyli
+        * fun +50
+
+       Naprawdę pisanie test�w w Spocku to prawdziwa przyjemność
+
+
+
+  P.S.
+  4. A więc plan jest taki,
+     1. najpierw b�dzie troch� teorii,
+        w tym czasie por�wnamy te� Spocka innymi na��dziami
+     2. potem przestaniemy przynudza� i poka�emy kod
+     3. a na koniec zrobimy live coding którego głównym celem jest migracja smutnych JUnit'owy testów na Spocka
+
+
+
+

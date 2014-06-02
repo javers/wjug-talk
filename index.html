@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Atmosphere 2014 / SPOCK - unbearable lightweight testing</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/nap.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/googlecode.css">
+
+    <!-- Full screan IMG -->
+    <link rel="stylesheet" href="plugin/fullscrean/fullscreen-img.css">
+
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+        document.write('<link rel="stylesheet" href="css/print/' + (window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper') + '.css" type="text/css" media="print">');
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div id="slides-footer"><img src="img/javers_big.png" width="200px"/></div>
+
+    <div class="slides">
+
+        <section>
+            <img src="img/javers_big.png">
+
+            <h3>Paweł Szymczyk</h3>
+            <h3>Bartosz Walacik</h3>
+            <h3>javers.org</h3>
+        </section>
+
+        <section>
+            <h2>Javers Project</h2>
+            <ul>
+                <li>Open source library</li>
+                <li>Technology agnostic</li>
+                <li>Based on reflection, JSON</li>
+                <li><code>https://github.com/javers/javers</code></li>
+                <li><code>compile 'org.javers:javers-core:0.7'</code></li>
+                <li><code>javers.org</code></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>What Javers can do for you?</h2>
+            <ul>
+                <li>Find diff between two graphs of objects</li>
+                <li>Data audit</li>
+            </ul>
+        </section>
+
+        <section>
+            <h1>Show time!</h1>
+        </section>
+
+        <section>
+            <h3>Looking for early adopters</h3>
+            <img src="img/clients.jpg">
+        </section>
+
+        <section>
+            <h3>Looking for contributors</h3>
+            <div>Javers needs you!</div>
+            <img src="img/javers-needs-you.png">
+        </section>
+
+        <section>
+            <h2>Profits for contributors</h2>
+            <ul>
+                <li>Knowledge sharing</li>
+                <li>Build your <code>Karma</code></li>
+                <li>No UI, no servers, no deployments </li>
+                <li>We choose technology stack: <br/> <code>Spock, Groovy, Pico, Gson, MongoDB</code></li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Javers Team</h3>
+            <img src="img/stars.jpg">
+        </section>
+
+        <section>
+            <img src="img/spock.jpg">
+        </section>
+
+
+        <section>
+            <h2>How do we work?</h2>
+            <ul>
+                <li>BDD</li>
+                <li>Remote XP</li>
+                <li>PR + Code review</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Pair programming via hangouts</h3>
+            <img src="img/remote.png" />
+        </section>
+
+        <section>
+            <h3>Code review</h3>
+            <img src="img/github.png" />
+        </section>
+
+        <!--<section>-->
+            <!--<h3>Code review on github</h3>-->
+        <!--</section>-->
+
+
+
+        <section>
+            <h2>About project</h2>
+            <ul>
+                <li>Src in Java 7</li>
+                <li>Tests in Spock, Groovy</li>
+                <li>11 kloc src</li>
+                <li>8 klock test</li>
+                <li>420 BDD tests</li>
+                <li>87% coverage</li>
+
+            </ul>
+        </section>
+
+        <section>
+            <h2>Dziękujemy za uwagę!</h2>
+
+            <h2>Q & A ... </h2>
+
+            <br/>
+
+            <h3>Contact us</h3>
+
+            <table id="slimTable">
+                <tr>
+                    <td>Paweł Szymczyk</td>
+                    <td><a href="http://javers.org">javers.org</a></td>
+                    <td><a>@p_szymczyk</a></td>
+                </tr>
+                <tr>
+                    <td>Bartosz Walacik</td>
+                    <td><a href="http://javers.org">javers.org</a></td>
+                    <td><a>@BartoszWalacik</a></td>
+                </tr>
+            </table>
+
+            <br/>
+            <br/>
+            <small><a href="https://github.com/javers/wjug-talk">http://github.com/javers/wjug-talk</a></small>
+
+
+        </section>
+
+    </div>
+
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+
+<script>
+
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+            {src: 'lib/js/classList.js', condition: function () {
+                return !document.body.classList;
+            }},
+            {src: 'plugin/markdown/marked.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }},
+            {src: 'plugin/markdown/markdown.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }},
+            {src: 'plugin/highlight/highlight.min.js', async: true, callback: function () {
+                hljs.configure({
+                    languages: ['ruby', 'java']
+                })
+                hljs.initHighlightingOnLoad();
+            }},
+            {src: 'plugin/zoom-js/zoom.js', async: true, condition: function () {
+                return !!document.body.classList;
+            }},
+            // Syntax highlight for <code> elements
+            { src: 'plugin/fullscrean/fullscreen-img.js', async: true },
+            { src: 'plugin/notes/notes.js', async: true, condition: function () {
+                return !!document.body.classList;
+            }}
+        ]
+    });
+
+
+    function updateFooter(event) {
+        var footer = document.getElementById('slides-footer');
+        footer.style.opacity = (event.indexh == 0 && event.indexv == 0) ? 0 : 1;
+    }
+
+    Reveal.addEventListener('ready', updateFooter);
+    Reveal.addEventListener('slidechanged', updateFooter);
+</script>
+
+</body>
+</html>
