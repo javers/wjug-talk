@@ -105,11 +105,26 @@
 
         <section>
             <h2>How do we work?</h2>
-            <ul>
-                <li>BDD</li>
-                <li>Remote XP</li>
-                <li>PR + Code review</li>
-            </ul>
+        </section>
+
+        <section>
+            <h3>BDD</h3>
+<pre><code>def "should append newObjects to diff"() {
+
+    given:
+    def left =  buildLiveGraph(dummyUser().withName("1")
+                                            .build())
+    def right = buildLiveGraph(dummyUser().withName("1").withDetails(5)
+                                            .build())
+
+    when:
+    def changes = new NewObjectAppender()
+                        .getChangeSet(new GraphPair(left, right))
+
+    then:
+    changes.size() == 1
+    assertThat(changes[0]).isNewObject()
+}</code></pre>
         </section>
 
         <section>
