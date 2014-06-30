@@ -79,6 +79,87 @@
             Requires mongod at localhost, Java8
         </section>
 
+
+        <section>
+            <h2>Javers Domain</h2>
+        </section>
+
+        <section>
+            <h2>Commit</h2>
+
+            <pre><code>
+    package org.javers.core.commit
+    ...
+    public final class Commit {
+        private final CommitId id;
+        private final List&lt;CdoSnapshot&gt; snapshots;
+        private final String author;
+        private final LocalDateTime commitDate;
+        private final Diff diff;
+        ...
+     }
+             </code></pre>
+        </section>
+
+        <section>
+            <h2>Snapshot</h2>
+
+            <pre><code>
+     package org.javers.core.metamodel.object;
+     ...
+     public final class CdoSnapshot extends Cdo {
+        private CommitId commitId;
+        private final Map&lt;Property, Object&gt; state;
+        ...
+     }
+            </code></pre>
+        </section>
+
+        <section>
+            <h2>Diff</h2>
+
+            <pre><code>
+    package org.javers.core.diff;
+    ...
+    public class Diff implements Visitable&lt;ChangeVisitor&gt;{
+        private final List&lt;Change&gt; changes;
+    ...
+    }
+            </code></pre>
+        </section>
+
+        <section>
+            <h2>Change</h2>
+
+            <pre><code>
+    package org.javers.core.diff;
+    ...
+    public abstract class Change implements Visitable&lt;ChangeVisitor&gt; {
+        private final GlobalCdoId affectedCdoId;
+        private transient Optional&lt;Object&gt; affectedCdo;
+        ...
+    }
+            </code></pre>
+        </section>
+
+        <section>
+            <h2>Client model mapping</h2>
+
+            <p>User classes are mapped to:</p>
+            <ul>
+                <li>Entity</li>
+                <li>ValueObject</li>
+                <li>Value</li>
+            </ul>
+            <p/>
+            <p>Java types are mapped to:</p>
+            <ul>
+                <li>Primitive</li>
+                <li>Value (ex BigDecimal)</li>
+                <li>Array, Set, List, Map</li>
+            </ul>
+        </section>
+
         <section>
             <h3>Looking for early adopters</h3>
             <img src="img/clients.jpg">
