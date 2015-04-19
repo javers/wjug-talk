@@ -43,8 +43,9 @@
         <section>
             <img src="img/javers_big.png">
 
-            <h3>Paweł Szymczyk</h3>
             <h3>Bartosz Walacik</h3>
+            <h3>Paweł Szymczyk</h3>
+            <h3>Bartosz Gałek</h3>
             javers.org
         </section>
 
@@ -56,115 +57,19 @@
                 <li>Based on Reflection & JSON</li>
                 <li><code>https://github.com/javers/javers</code></li>
                 <li><code>javers.org</code></li>
-                <li><code>compile 'org.javers:javers-core:0.7.0'</code></li>
+                <li><code>compile 'org.javers:javers-core:1.1.1'</code></li>
+
             </ul>
         </section>
 
         <section>
-            <h2>What Javers can do for you?</h2>
             <ul>
-                <li>Find diff between two graphs of objects</li>
-                <li>Data audit</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Allegro category tree - Use Case </h2>
-        </section>
-
-        <section>
-            <h1>Show time!</h1>
-
-            <pre><code>
-                git clone https://github.com/javers/javers-demo.git
-                gradlew bootRun
-            </code></pre>
-
-            Requires mongod at localhost, Java8
-        </section>
-
-
-        <section>
-            <h2>Javers Domain</h2>
-        </section>
-
-        <section>
-            <h2>Commit</h2>
-
-            <pre><code>
-    package org.javers.core.commit
-    ...
-    public final class Commit {
-        private final CommitId id;
-        private final List&lt;CdoSnapshot&gt; snapshots;
-        private final String author;
-        private final LocalDateTime commitDate;
-        private final Diff diff;
-        ...
-     }
-             </code></pre>
-        </section>
-
-        <section>
-            <h2>Snapshot</h2>
-
-            <pre><code>
-     package org.javers.core.metamodel.object;
-     ...
-     public final class CdoSnapshot extends Cdo {
-        private CommitId commitId;
-        private final Map&lt;Property, Object&gt; state;
-        ...
-     }
-            </code></pre>
-        </section>
-
-        <section>
-            <h2>Diff</h2>
-
-            <pre><code>
-    package org.javers.core.diff;
-    ...
-    public class Diff implements Visitable&lt;ChangeVisitor&gt;{
-        private final List&lt;Change&gt; changes;
-    ...
-    }
-            </code></pre>
-        </section>
-
-        <section>
-            <h2>Change</h2>
-
-            <pre><code>
-    package org.javers.core.diff;
-    ...
-    public abstract class Change implements Visitable&lt;ChangeVisitor&gt; {
-        private final GlobalCdoId affectedCdoId;
-        private transient Optional&lt;Object&gt; affectedCdo;
-        ...
-    }
-            </code></pre>
-        </section>
-
-        <section>
-            <h1>OJM</h1>
-        </section>
-
-        <section>
-            <h2>Client model mapping</h2>
-
-            <p>User classes are mapped to:</p>
-            <ul>
-                <li><code>Entity</code></li>
-                <li><code>ValueObject</code></li>
-                <li><code>Value</code></li>
-            </ul>
-            <p/>
-            <p>Java types are mapped to:</p>
-            <ul>
-                <li><code>Primitive</code></li>
-                <li><code>Value</code> (ex <code>BigDecimal</code>)</li>
-                <li><code>Array, Set, List, Map</code></li>
+                <li>Src in Java 7</li>
+                <li>Tests in Spock, Groovy</li>
+                <li>11 kloc src</li>
+                <li>8 klock test</li>
+                <li>420 BDD tests</li>
+                <li>87% coverage</li>
             </ul>
         </section>
 
@@ -190,99 +95,19 @@
         </section>
 
         <section>
-            <h3>Javers Team</h3>
-            <img src="img/stars3.jpg">
-        </section>
-
-        <section>
-            <img src="img/spock.jpg" height="500" />
-        </section>
-
-
-        <section>
-            <img src="img/stars4r.jpg"/>
-        </section>
-
-        <section>
-            <h2>How do we work?</h2>
-        </section>
-
-        <section>
-            <h3>BDD</h3>
-<pre><code>def "should append newObjects to diff"() {
-
-    given:
-    def left =  buildLiveGraph(dummyUser().withName("1")
-                                            .build())
-    def right = buildLiveGraph(dummyUser().withName("1").withDetails(5)
-                                            .build())
-
-    when:
-    def changes = new NewObjectAppender()
-                        .getChangeSet(new GraphPair(left, right))
-
-    then:
-    changes.size() == 1
-    assertThat(changes[0]).isNewObject()
-}</code></pre>
-        </section>
-
-        <section>
-            <h3>Pair programming via hangouts</h3>
-            <img src="img/remote.png" />
-        </section>
-
-        <section>
-            <h3>Code review</h3>
-            <img src="img/github.png" />
-        </section>
-
-        <!--<section>-->
-            <!--<h3>Code review on github</h3>-->
-        <!--</section>-->
-
-
-
-        <section>
-            <h2>About project</h2>
-            <ul>
-                <li>Src in Java 7</li>
-                <li>Tests in Spock, Groovy</li>
-                <li>11 kloc src</li>
-                <li>8 klock test</li>
-                <li>420 BDD tests</li>
-                <li>87% coverage</li>
-
-            </ul>
-        </section>
-
-        <section>
-            <h2>Dziękujemy za uwagę!</h2>
+            <h2>Dzięki za uwagę!</h2>
 
             <h2>Q & A ... </h2>
 
             <br/>
 
-            <h3>Contact us</h3>
-
-            <table id="slimTable">
-                <tr>
-                    <td>Paweł Szymczyk</td>
-                    <td><a href="http://javers.org">javers.org</a></td>
-                    <td><a>@p_szymczyk</a></td>
-                </tr>
-                <tr>
-                    <td>Bartosz Walacik</td>
-                    <td><a href="http://javers.org">javers.org</a></td>
-                    <td><a>@BartoszWalacik</a></td>
-                </tr>
-            </table>
-
+            https://gitter.im/javers/javers
             <br/>
             <br/>
-            <small><a href="https://github.com/javers/wjug-talk">http://github.com/javers/wjug-talk</a></small>
-
-
+                Paweł Szymczyk <br/>
+                @p_szymczyk<img src="img/twitter_512_black.png" height="40" width="40">
+            <br/>
+            <br/>
         </section>
 
     </div>
